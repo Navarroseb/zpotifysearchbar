@@ -57,6 +57,7 @@ function App() {
   return (
     <div className="App">
       <Container>
+        <h1>ZPOTIFY</h1>
         <InputGroup className="mb-3" size="lg">
           <FormControl
             placeholder='Search for Artist'
