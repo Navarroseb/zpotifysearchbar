@@ -45,7 +45,7 @@ function App() {
 
     // GET REQUEST FOR ALL THE ALBUMS
 
-    let returnedAlbums = await fetch('https://api.spotify.com/v1/artists/' + artistID + '/albums' + '?include_groups=album&market=US&limit=50', searchParameters)
+    let returnedAlbums = await fetch(`'https://api.spotify.com/v1/artists/' + artistID + '/albums' + '?include_groups=album&market=US&limit=50', searchParameters`)
       .then(response => response.json())
       .then(data => {
         console.log(data)
@@ -63,7 +63,7 @@ function App() {
             placeholder='Search for Artist'
             type='input'
             onKeyDown={event => {
-              if (event.key == "Enter") {
+              if (event.key === "Enter") {
                 search();
               }
             }}
